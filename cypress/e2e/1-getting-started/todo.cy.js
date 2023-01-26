@@ -31,12 +31,12 @@ describe('example to-do app', () => {
     // to get just the first and last matched elements individually,
     // and then perform an assertion with `should`.
     cy.get('.todo-list li').first().should('have.text', 'Pay electric bill')
-    cy.get('.todo-list li').last().should('have.text', 'Walk the dog')
+    cy.get('.todo-list li').last().should('have.text', 'Talk the dog')
   })
 
   it('can add new todo items', () => {
     // We'll store our item text in a variable so we can reuse it
-    const newItem = 'Feed the cat'
+    const newItem = 'Learn'
 
     // Let's get the input element and use the `type` command to
     // input our new list item. After typing the content of our item,
